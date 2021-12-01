@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +30,70 @@ body {
 
 .close-icon {
     position: absolute;
-    right: 2%;
-    top: 2%;
+    right: 15px;
+    top: 15px;
+}
+
+.happy-face {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.confirmation-text {
+    margin: auto;
+    margin-top: 2rem;
+    width: 300px;
+    text-align: center;
+}
+
+.confirmation-text > h2 {
+    font-family: Monserrat;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2F463D;
+    margin: 20px 0 15px;
+}
+
+.confirmation-text > p {
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 26px;
+    color: #828282;
+}
+
+.inner-container { 
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 55px 45px;
+}
+
+.inner-container > h2 {
+    margin: 20px 0 15px;
+    font-size: 22px;
+    color: #2F463D;
+    font-family: Ubuntu;
+
+}
+
+.inner-container > p {
+    font-family: Ubuntu;
+    line-height: 26px;
+    font-size: 14px;
+    color: #828282;
+}
+
+#food-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0FFF5;
+    border-radius: 5px;
+    margin: 40px 0 20px;
+    width: 30%;
+}
+
+.food-name-price {
+    width: 50%;
+    text-align: left;
 }
