@@ -7,6 +7,7 @@
 body, html {
     min-width: 100%;
     min-height: 100vh;
+    background-size: cover;
 }
 body {
     background: #ffffff url("https://assets.codepen.io/6060109/ZigZag.png");
@@ -20,45 +21,18 @@ body {
 .white-container {
     background-color: #ffffff;
     width: 90%;
-    height: 700px;
-    min-width: 400px;
+    height: 600px;
+    width: 350px;
     border-radius: 15px;
     position: relative;
     margin: 70px auto;
     box-shadow: 0px 40px 40px -20px #3C7B61;
 }
 
-.close-icon {
+#close-icon {
     position: absolute;
     right: 15px;
     top: 15px;
-}
-
-.happy-face {
-    text-align: center;
-    padding-top: 10%;
-}
-
-.confirmation-text {
-    margin: auto;
-    margin-top: 2rem;
-    width: 300px;
-    text-align: center;
-}
-
-.confirmation-text > h2 {
-    font-family: Monserrat;
-    font-size: 22px;
-    font-weight: 600;
-    color: #2F463D;
-    margin: 20px 0 15px;
-}
-
-.confirmation-text > p {
-    font-family: Ubuntu;
-    font-size: 14px;
-    line-height: 26px;
-    color: #828282;
 }
 
 .inner-container { 
@@ -83,17 +57,102 @@ body {
     color: #828282;
 }
 
+
+.confirmation-text {
+    margin: auto;
+    margin-top: 2rem;
+    width: 300px;
+    text-align: center;
+}
+
+.confirmation-text > h2 {
+    font-family: Monserrat;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2F463D;
+    margin: 20px 0 15px;
+}
+
+.confirmation-text > p {
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 26px;
+    color: #828282;
+}
+
 #food-selection {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #F0FFF5;
     border-radius: 5px;
     margin: 40px 0 20px;
-    width: 30%;
 }
 
 .food-name-price {
     width: 50%;
     text-align: left;
+    padding-left: 20px;
+}
+
+.food-name-price > h5 {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.food-name-price > h6 {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #7A8F85;
+    font-size: 14px;
+}
+
+#food-selection > a {
+    color: #467A66;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Ubuntu;
+}
+
+#button {
+    width: 100%;
+    background-color: green;
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 2rem;
+    color: seashell;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 5px 8px 32px 12px rgba(145,143,142,0.82);
+    margin-bottom: 4rem;
+}
+
+#button:hover {
+    opacity: .8;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.dot-container {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    bottom: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    background-color: #a0a0a0;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-top: 3rem;
+}
+
+.dot.green {
+    background-color: #67BD99;
 }
