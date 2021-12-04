@@ -12,21 +12,43 @@ body, html {
 body {
     background: #ffffff url("https://assets.codepen.io/6060109/ZigZag.png");
     background-size: cover;
-    /* height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
 .white-container {
     background-color: #ffffff;
     width: 90%;
-    height: 600px;
+    height: 650px;
     width: 350px;
     border-radius: 15px;
     position: relative;
-    margin: 70px auto;
+    margin: 70px 0;
     box-shadow: 0px 40px 40px -20px #3C7B61;
+}
+
+.white-container.left, .white-container.right {
+    height: 600px;
+}
+
+.white-container.left {
+    margin-right: -20px;
+}
+
+.white-container.right {
+    margin-left: -20px;
+}
+
+.white-container.center {
+    z-index: 9;
+    width: 370px;
+
+}
+
+.inner-container > img {
+    width: 50%;
 }
 
 #close-icon {
@@ -42,11 +64,13 @@ body {
     padding: 55px 45px;
 }
 
+
 .inner-container > h2 {
     margin: 20px 0 15px;
     font-size: 22px;
     color: #2F463D;
     font-family: Ubuntu;
+    height: 20px;
 
 }
 
@@ -95,14 +119,14 @@ body {
 }
 
 .food-name-price > h5 {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 800;
     font-size: 14px;
     margin-bottom: 3px;
 }
 
 .food-name-price > h6 {
-    font-family: Montserrat;
+    font-family: Ubuntu;
     font-weight: 500;
     color: #7A8F85;
     font-size: 14px;
@@ -115,9 +139,8 @@ body {
     font-family: Ubuntu;
 }
 
-#button {
+.button {
     width: 100%;
-    background-color: green;
     padding: 15px 0;
     border-radius: 5px;
     margin-top: 2rem;
@@ -125,14 +148,28 @@ body {
     border: none;
     font-weight: 600;
     font-size: 15px;
-    box-shadow: 5px 8px 32px 12px rgba(145,143,142,0.82);
     margin-bottom: 4rem;
 }
 
-#button:hover {
+.button:hover {
     opacity: .8;
     transition: .3s ease all;
     cursor: pointer;
+}
+
+.ready-btn {
+    background-color: green;
+    box-shadow: 5px 8px 32px 12px rgba(145,143,142,0.82);
+
+}
+.inactive-btn {
+    background-color: #BDBDBD;
+    box-shadow: 10px 5px 29px 5px #9C9C9C;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
 }
 
 .dot-container {
@@ -155,4 +192,18 @@ body {
 
 .dot.green {
     background-color: #67BD99;
+}
+
+.right, .left{
+    display: none;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .right, .left{
+        display: block;
+    }
+
+
 }
